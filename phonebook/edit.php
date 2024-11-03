@@ -14,7 +14,6 @@
         }
         else{
             echo "No contact found wiht that id";
-            
         }
     }
     
