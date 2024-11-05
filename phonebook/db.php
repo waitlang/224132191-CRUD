@@ -1,15 +1,16 @@
 <?php
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "phonebook";
+  error_reporting(E_ALL);
+  ini_set('display_errors', 1);
 
-    //Create connection
+  $servername = "localhost";
+  $username = "root";
+  $password = "";
+  $dbname = "shopping_db";
+  $port = 3307;
 
-    $conn = new mysqli($servername, $username, $password, $dbname);
-
-    if ($conn->connect_error){
-        die ("Con fail". $conn->connect_error);
-        
-    }
+  $conn = new mysqli($servername, $username, $password, $dbname, $port);
+  if ($conn->connect_error) {
+      die("Connection failed: " . $conn->connect_error);
+  }
+  $conn->autocommit(TRUE);
 ?>

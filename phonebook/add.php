@@ -2,11 +2,11 @@
     include 'db.php';
 
     if ($_SERVER["REQUEST_METHOD"]=="POST"){
-        $name =$_POST['name'];
-        $phone =$_POST['phone'];
+        $title =$_POST['title'];
+        $desc =$_POST['desc'];
 
-        if (!empty($name) && !empty($phone)){
-            $sql = "INSERT INTO contacts (name, phone) VALUES ('$name', '$phone')";
+        if (!empty($title) && !empty($phone)){
+            $sql = "INSERT INTO contacts (title, desc) VALUES ('$title', '$desc')";
 
             if ($conn->query($sql)=== TRUE){
                 echo "New contact added success";
@@ -27,16 +27,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add contak</title>
+    <title>Add</title>
 </head>
 <body>
-    <h2>Add contak lmao</h2>
+    <h2>Add to list</h2>
 
     <form method = "post" action="add.php">
-        Name: <input type="text" name="name"><br><br>
-        Phone: <input type="text" name="phone"><br><br>
+        Title: <input type="text" name="title"><br><br>
+        Description: <input type="text" name="desc"><br><br>
         <input type="submit" value="Add Contact">
     </form>
-    <a href="index.php">Back to phonebook</a>
+    <a href="index.php">Back to list</a>
 </body>
 </html>
