@@ -28,6 +28,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add</title>
+    <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+      font-family: 'Courier New', Courier, monospace;
+      color: white;
+    }
+    body{
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      background: darkslateblue;
+    }
+    h1{
+      text-align: center;
+    
+    }
+  </style>
 </head>
 <body>
     <h2>Add to list</h2>

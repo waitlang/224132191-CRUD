@@ -13,7 +13,7 @@
             $result = $row['desc'];
         }
         else{
-            echo "No contact found wiht that id";
+            echo "No item found wiht that id";
         }
     }
     
