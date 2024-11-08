@@ -4,7 +4,7 @@
     if (isset($_GET['id'])){ 
         $id =$_GET['id'];
 
-        $sql= "DELETE FROM contacts WHERE id=$id"; 
+        $sql= "DELETE FROM list WHERE id=$id"; 
         if ($conn->query($sql) === TRUE) {
             echo "Contact successfully deleted. ";
         } else {

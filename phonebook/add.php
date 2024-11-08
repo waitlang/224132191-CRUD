@@ -6,7 +6,7 @@
         $desc =$_POST['desc'];
 
         if (!empty($title) && !empty($phone)){
-            $sql = "INSERT INTO contacts (title, desc) VALUES ('$title', '$desc')";
+            $sql = "INSERT INTO list (title, desc) VALUES ('$title', '$desc')";
 
             if ($conn->query($sql)=== TRUE){
                 echo "New contact added success";
@@ -29,22 +29,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add</title>
     <style>
-    *{
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-
-      font-family: 'Courier New', Courier, monospace;
-      color: white;
-    }
     body{
 
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-
-      background: darkslateblue;
     }
     h1{
       text-align: center;
@@ -57,8 +47,8 @@
 
     <form method = "post" action="add.php">
         Title: <input type="text" name="title"><br><br>
-        Description: <input type="text" name="desc"><br><br>
-        <input type="submit" value="Add Contact">
+        Desc: <input type="text" name="desc"><br><br>
+        <input type="submit" value="Add item">
     </form>
     <a href="index.php">Back to list</a>
 </body>
