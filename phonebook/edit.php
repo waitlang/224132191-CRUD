@@ -41,9 +41,11 @@
 <body>
     <h1>Edit an item</h1>
     <form action="edit.php" method="post">
-        <input type="hidden" name="entry_id" value="<?php echo htmlspecialchars($id); ?>">
-        Title: <input type="text" name="title" value="<?php echo htmlspecialchars($title); ?>"><br>
-        Desc: <input type="text" name="body" value="<?php echo htmlspecialchars($body); ?>"><br><br>
+        <input type="hidden" name="entry_id" value="<?php echo $id; ?>">
+        Title: <input type="text" name="title" value="<?php echo $title; ?>">
+        <br>
+        Desc: <input type="text" name="desc" value="<?php echo $desc; ?>">
+        <br>
         <input type="submit" value="Edit List Item">
     </form>
     <a href="index.php">Back to List</a>

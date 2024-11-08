@@ -36,7 +36,7 @@
       justify-content: center;
       align-items: center;
     }
-    h1{
+    h2{
       text-align: center;
     
     }
@@ -46,8 +46,10 @@
     <h2>Add to list</h2>
 
     <form method = "post" action="add.php">
-        Title: <input type="text" name="title"><br><br>
-        Desc: <input type="text" name="desc"><br><br>
+        Title: <input type="text" name="title">
+        <br>
+        Desc: <input type="text" name="desc">
+        <br>
         <input type="submit" value="Add item">
     </form>
     <a href="index.php">Back to list</a>
